@@ -26,8 +26,7 @@ body{
   display: flex;
   flex-direction:column;
   justify-content: center;
-  align-content: center;
-
+  align-content: stretch;
   height: 100%;
   overflow: auto;
   position:relative;
@@ -36,13 +35,12 @@ body{
 }
 
 #startingFormContainer{
-  height: 40%;
+  height: 50%;
   margin:0 auto;
-  margin-top:10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
   transition: all 1s ease-in-out;
 
 
@@ -136,9 +134,9 @@ body{
 
 #queryOutput{
 
-  height: 60%;
+  height: 50%;
   width: 100%;
-  padding:5px;
+  padding: 20px 5px;
   margin: 0 auto;
   overflow: scroll;
   /* background-color: white; */
@@ -171,4 +169,65 @@ body{
   font-size:20px;
   color:rgba(0,0,0,0.7);
   margin-bottom: 20px;
+}
+
+@media (max-height:300px){
+
+  #logoText{
+    display: none;
+  }
+  #queryOutput{
+    padding-top: 30px;
+  }
+}
+
+@media (min-height:380px){
+  #startingFormContainer{
+    align-content: center;
+    justify-content: center;
+  }
+  #queryOutput{
+    padding-top:0;
+  }
+}
+
+@media (min-height:600px){
+  #startingFormContainer{
+    height: 40%;
+  }
+
+  #queryOutput{
+    height: 60%;
+  }
+}
+
+@media (min-width:500px){
+  #logoText{
+    font-size: 60px;
+  }
+  #queryOutput{
+    padding-left:10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media (min-width:600px){
+
+  #queryOutput{
+    width: 60%;
+  }
+}
+
+@media (min-width:1200px){
+
+  #logoText{
+    font-size: 80px;
+  }
+
+  
+
+  #queryOutput{
+    width: 50%;
+  }
 }
