@@ -245,6 +245,8 @@ function handledata(data){
 
       document.body.appendChild(tag);
 
+      alert(lan);
+
     }
   }//end of getData
 
@@ -312,7 +314,7 @@ function handledata(data){
 
 
 
-  
+
 
 
 
