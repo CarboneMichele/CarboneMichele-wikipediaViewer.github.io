@@ -139,9 +139,25 @@ body{
   padding: 20px 5px;
   margin: 0 auto;
   overflow: scroll;
+  padding-bottom: 100px;
+  position: relative;
+
+
+
   /* background-color: white; */
 
 }
+
+/* 
+#queryOutput::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+} */
 
 #queryOutput::-webkit-scrollbar {
     display: none;
@@ -225,7 +241,7 @@ body{
     font-size: 80px;
   }
 
-  
+
 
   #queryOutput{
     width: 50%;

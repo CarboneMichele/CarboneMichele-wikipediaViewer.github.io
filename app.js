@@ -1,9 +1,9 @@
 const resultLink=document.getElementsByClassName("resultLink");
 const resultDescription=document.getElementsByClassName("resultDescription");
 const userLanguage=window.navigator.userLanguage || window.navigator.language;
-const lan = userLanguage.substring(0,2);
+const lan =userLanguage.substring(0,2);
 
-console.log(userLanguage,lan);
+console.log(lan);
 
 
 
