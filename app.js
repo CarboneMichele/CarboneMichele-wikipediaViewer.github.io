@@ -1,9 +1,6 @@
 const resultLink=document.getElementsByClassName("resultLink");
 const resultDescription=document.getElementsByClassName("resultDescription");
-const userLanguage=window.navigator.userLanguage || window.navigator.language;
-const lan =userLanguage.substring(0,2);
 
-console.log(lan);
 
 
 
@@ -245,7 +242,7 @@ function handledata(data){
 
       document.body.appendChild(tag);
 
-      alert(lan);
+      
 
     }
   }//end of getData
@@ -309,8 +306,15 @@ function handledata(data){
 
   }
 
-  // $.cl("randomQueryAnchor",0).addEventListener("click",randomQuery);
-  // $.id("randomQueryBtn").addEventListener("click",randomQuery);
+
+
+
+
+
+ }
+
+
+
 
 
 
