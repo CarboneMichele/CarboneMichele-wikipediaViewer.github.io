@@ -243,7 +243,7 @@ function handledata(data){
 
   function clearResults(event){
 
-     event=event || window.event;
+    event=event || window.event;
 
     if(event.keyCode=="8" && $.id("queryField").value.length==1){
 
