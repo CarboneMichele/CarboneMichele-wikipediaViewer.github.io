@@ -10,7 +10,7 @@ A wikipedia search app built for a FreeCodeCamp's coding challenge
 
 -HTML5  
 -CSS3  
--JS  
+-Vanilla JS  
 
 ### APIs/Libraries  
 
