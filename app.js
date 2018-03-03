@@ -195,11 +195,15 @@ function handledata(data){
 
   $.id("queryField").addEventListener("keyup",getData);
 
-  function getData(e){
+  function getData(event){
+
+    let event=event || window.event;
 
 
 
-    if(!e.keyCode.toString().match(/^(37|38|39|40|13|16|17|18|224)$/)){
+
+
+    if(!event.keyCode.toString().match(/^(37|38|39|40|13|16|17|18|224)$/)){
 
 
     //prevent request if backspace is pressed and input field is empty
@@ -239,6 +243,8 @@ function handledata(data){
 
   function clearResults(event){
 
+    let  event=event || window.event;
+
     if(event.keyCode=="8" && $.id("queryField").value.length==1){
 
       for(var i=0; i<5;i++){
@@ -253,7 +259,7 @@ function handledata(data){
 
       }//end of loop
 
-    
+
     }
     else{
         console.log(event.keyCode);
