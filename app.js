@@ -1,6 +1,7 @@
 const resultLink=document.getElementsByClassName("resultLink");
 const resultDescription=document.getElementsByClassName("resultDescription");
-
+let language= window.navigator.userLanguage || window.navigator.language;
+let lan = language.substring(0,2);
 
 
 
@@ -242,7 +243,7 @@ function handledata(data){
 
       document.body.appendChild(tag);
 
-      
+
 
     }
   }//end of getData
@@ -311,7 +312,7 @@ function handledata(data){
 
 
 
- }
+
 
 
 
