@@ -1,5 +1,9 @@
 const resultLink=document.getElementsByClassName("resultLink");
 const resultDescription=document.getElementsByClassName("resultDescription");
+const userLanguage=window.navigator.userLanguage || window.navigator.language;
+const lan = userLanguage.substring(0,2);
+
+console.log(userLanguage,lan);
 
 
 
@@ -225,7 +229,8 @@ function handledata(data){
 
       let URL={
 
-        endpoint: "https://en.wikipedia.org/w/api.php?",
+
+        endpoint: "https://"+lan+".wikipedia.org/w/api.php?",
         action:"action=opensearch",
         limit:"limit=10",
         format:"format=json",
@@ -235,6 +240,7 @@ function handledata(data){
       }
 
   		tag.src = URL.endpoint+URL.action+"&"+URL.limit+"&"+URL.format+"&"+URL.callback+"&"+URL.search;
+
 
 
       document.body.appendChild(tag);
@@ -306,7 +312,7 @@ function handledata(data){
 
 
 
-
+  
 
 
 
