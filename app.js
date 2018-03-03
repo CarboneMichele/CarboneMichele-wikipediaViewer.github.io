@@ -21,6 +21,8 @@ function handledata(data){
 
 
 
+
+
 (function (){
   const $ = {
     cl : function(str,index){return document.getElementsByClassName(str)[index]},
@@ -200,7 +202,9 @@ function handledata(data){
      event=event || window.event;
 
 
-
+     if(event.keyCode=="13"){
+         event.preventDefault();
+     }
 
 
     if(!event.keyCode.toString().match(/^(37|38|39|40|13|16|17|18|224)$/)){
@@ -244,6 +248,10 @@ function handledata(data){
   function clearResults(event){
 
     event=event || window.event;
+
+    if(event.keyCode=="13"){
+        event.preventDefault();
+    }
 
     if(event.keyCode=="8" && $.id("queryField").value.length==1){
 
@@ -292,6 +300,11 @@ function handledata(data){
     setWidth($.id("queryOutput"),$.id("queryField"));
 
   }
+
+  // $.cl("randomQueryAnchor",0).addEventListener("click",randomQuery);
+  // $.id("randomQueryBtn").addEventListener("click",randomQuery);
+
+
 
 
 
