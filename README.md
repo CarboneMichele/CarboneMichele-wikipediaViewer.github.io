@@ -1,6 +1,9 @@
 # CarboneMichele-wikipediaViewer.github.io  
 A wikipedia search app built for a FreeCodeCamp's coding challenge  
 
+Link to the page: https://carbonemichele.github.io/wikipedia_viewer/  
+Ling to the FCC challenge: https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer  
+
 ## Features:  
 
 -Get a list of wikipedia pages related to what you typed in the input field    
